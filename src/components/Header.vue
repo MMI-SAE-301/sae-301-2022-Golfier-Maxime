@@ -23,9 +23,4 @@
     font-weight: 700;
     font-style: normal;
 }
-
-.box_green {
-    background: green;
-    height: 4px;
-}
 </style>
