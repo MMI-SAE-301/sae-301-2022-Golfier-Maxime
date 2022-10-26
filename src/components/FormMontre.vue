@@ -49,7 +49,7 @@ if (props.id) {
                 }
             }">
 
-                <FormKit name="id_user" label="id_user" type="text" :value="user.id" outer-class="hidden" />
+                <!-- <FormKit name="id_user" label="id_user" type="text" :value="user.id" outer-class="hidden" /> -->
 
 
                 <FormKitListColors name="bracelet" label="Bracelet" />
