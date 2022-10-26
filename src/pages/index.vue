@@ -24,7 +24,7 @@ import LoginLogout from '@/components/LoginLogout.vue';
     <div class="mt-40">
       <div class="flex ml-[169px] mr-[169px] ">
         <div class="w-[400px]">
-          <img src="carre-tiktak.png">
+          <!-- <img src="carre-tiktak.png"> -->
         </div>
         <div class="flex flex-col justify-between">
           <div>
