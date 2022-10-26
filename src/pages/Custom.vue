@@ -13,7 +13,9 @@ import FormMontre from '@/components/FormMontre.vue'
     </div>
     <div class="flex justify-center">
         <div class="bg-Blue-Light-0 w-80 h-20 flex justify-center rounded-md">
-            <button class=" text-white font-montserrat font-bold text-lg">Voir ma liste</button>
+            <router-link to="/Liste">
+                <div class=" text-white font-montserrat font-bold text-lg">Voir ma liste</div>
+            </router-link>
         </div>
     </div>
 
