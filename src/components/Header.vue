@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 <template>
     <div class="bg-Blue-Black-0 flex justify-between">
         <div class=" flex items-center">
@@ -16,7 +18,9 @@
                 </router-link>
             </div>
             <div class="mr-[45px]  hover:underline underline-offset-8 decoration-Blue-Light-0 ">
-                <p>S'inscrire / Se connecter</p>
+                <router-link to="/connexion">
+                    <p>S'inscrire / Se connecter</p>
+                </router-link>
             </div>
         </div>
     </div>
