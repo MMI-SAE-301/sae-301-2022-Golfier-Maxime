@@ -1,35 +1,35 @@
 <script setup lang="ts">
 import { type Montre, colors, materiaux } from "@/types";
 import { ref } from "vue";
-import Montre from "./Montre.vue";
 import FormKitListColors from "./FormKitListColors.vue";
 import { supabase } from "../supabase";
 import { useRouter } from "vue-router";
+import MontreVue from '@/components/Montre.vue';
 
 const router = useRouter();
 
 const props = defineProps<{
-    data?: Montre;
+    data?: Basket;
     id?: string;
 }>();
 
-const montre = ref<Montre>(props.data ?? {});
+const montre = ref<Basket>(props.data ?? {});
 
-async function upsertMontre(dataForm, node) {
+async function upsertBasket(dataForm, node) {
     const { data, error } = await supabase.from("montre").upsert(dataForm);
     if (error) node.setErrors([error.message]);
     else {
         node.setErrors([]);
-        router.push({ name: "montre" });
+        router.push({ name: "basket" });
     }
 }
 
 if (props.id) {
-    // On charge les données de la montre
+    // On charge les données de la maison
     let { data, error } = await supabase
         .from("montre")
         .select("*")
-        .eq("montre", props.id);
+        .eq("id_chaussure", props.id);
     if (error || !data)
         console.log("n'a pas pu charger le table montre :", error);
     else montre.value = data[0];
@@ -38,11 +38,10 @@ if (props.id) {
 
 <template>
     <div class="p-2">
-
-        <div class="w-64">
-            <Montre class="w-64" v-bind="montre" id="profil" />
+        <div class="carousel w-64">
+            <MontreVue class="carousel-item w-64" v-bind="montre" id="profil" />
         </div>
-        <FormKit type="form" v-model="montre" @submit="upsertMontre">
+        <FormKit type="form" v-model="montre" @submit="upsertBasket">
 
             <FormKitListColors name="bracelet" label="Bracelet" />
             <FormKitListColors name="boitier" label="Boitier" />
