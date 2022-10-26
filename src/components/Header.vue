@@ -6,16 +6,22 @@
         </div>
         <div class="text-white flex gap-8 font-montserrat text-2xl font-bold items-center">
             <div class=" hover:underline underline-offset-8 decoration-Blue-Light-0 ">
-                <p class="">Accueil</p>
+                <router-link to="/">
+                    <p class="">Accueil</p>
+                </router-link>
             </div>
             <div class=" hover:underline underline-offset-8 decoration-Blue-Light-0 ">
-                <p>Customisation</p>
+                <router-link to="/custom">
+                    <p>Customisation</p>
+                </router-link>
             </div>
             <div class="mr-[45px]  hover:underline underline-offset-8 decoration-Blue-Light-0 ">
                 <p>S'inscrire / Se connecter</p>
             </div>
         </div>
     </div>
+
+
 </template>
 <style>
 .josefin {
