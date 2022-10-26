@@ -17,7 +17,7 @@ import LoginLogout from '@/components/LoginLogout.vue';
         </router-link>
       </div>
       <div class="w-[400px]">
-        <img src="montre.png" class="">
+        <!-- <img src="montre.png" class=""> -->
       </div>
     </div>
     <!-- Section 2 -->
