@@ -13,11 +13,28 @@ if (error) {
 }
 </script>
 <template>
-    <ul class="flex gap-3 ml-40">
-        <li v-for="montre in montres" :key="montre.id_montre">
-            <router-link :to="`/edit/${montre.id_montre}`">
-                <MontreVue class="w-32 " v-bind="montre" />
-            </router-link>
-        </li>
-    </ul>
+    <div>
+        <ul class="lg:flex lg:gap-3 lg:ml-40 ">
+            <div class="flex flex-col items-center justify-center">
+                <li v-for="montre in montres" :key="montre.id_montre" class="">
+                    <router-link :to="`/edit/${montre.id_montre}`">
+                        <MontreVue class="w-32 margb" v-bind="montre" />
+                    </router-link>
+                </li>
+            </div>
+        </ul>
+    </div>
 </template>
+<style scoped>
+.margb {
+    margin-bottom: -300px;
+
+}
+
+@media screen and (min-width: 910px) {
+    .margb {
+        margin-bottom: 0px;
+
+    }
+}
+</style>
