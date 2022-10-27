@@ -1,4 +1,4 @@
-<script setup></script>
+<script setup lang="ts"></script>
 <template>
     <div class="pb-8 pt-8">
         <p class="text-black josefin text-[45px] ml-[45px] text-center">TiK•TaK</p>

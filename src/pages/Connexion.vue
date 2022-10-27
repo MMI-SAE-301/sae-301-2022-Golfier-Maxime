@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import LoginLogout from '@/components/LoginLogout.vue';
 import LoginLogoutF from '@/components/LoginLogoutFacebook.vue';
 </script>
