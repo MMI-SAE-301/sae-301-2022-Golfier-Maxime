@@ -8,8 +8,8 @@ import LoginLogout from '@/components/LoginLogout.vue';
     <div class="lg:flex lg:ml-[169px] ml-3  lg:mr-[169px]">
       <div class="flex flex-col justify-between gap-2">
         <div class="">
-          <h1 class="font-montserrat font-bold lg:text-[60px] text-2xl">LE TEMPS EST MODIFIÉ</h1>
-          <h1 class="font-montserrat font-bold lg:text-[60px] text-2xl">AVEC TOI !</h1>
+          <h1 class="font-montserrat font-bold lg:text-[60px]">LE TEMPS EST MODIFIÉ</h1>
+          <h1 class="font-montserrat font-bold lg:text-[60px]">AVEC TOI !</h1>
         </div>
         <p class="font-montserrat font-light text-2xl">TiK•TaK, est le site pour créer ta propre montre connecter !</p>
         <router-link to="/custom">

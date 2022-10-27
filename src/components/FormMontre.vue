@@ -39,11 +39,11 @@ if (props.id) {
 </script>
 
 <template>
-    <div class="flex justify-center mt-16 gap-11">
-        <div class="">
-            <MontreVue class="w-52" v-bind="montre" id="profil" />
+    <div class="lg:flex lg:justify-center lg:mt-16 lg:gap-11">
+        <div class="flex justify-center margb">
+            <MontreVue class="lg:w-52 w-36" v-bind="montre" id="profil" />
         </div>
-        <div class="flex flex-col justify-center">
+        <div class="flex lg:flex-col justify-center">
             <FormKit type="form" v-model="montre" @submit="upsertMontre" :submit-attrs="{
                 classes: {
                     input: `text-[#FFFFFF] bg-Blue-Light-0 bouton`
@@ -93,10 +93,22 @@ if (props.id) {
 
 .bouton {
     height: 80px;
-    width: 300px;
+    width: 200px;
     border-radius: 5px;
     margin-top: 20px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+}
+
+.margb {
+    margin-bottom: -100px;
+
+}
+
+@media screen and (min-width: 910px) {
+    .margb {
+        margin-bottom: 0px;
+
+    }
 }
 </style>
