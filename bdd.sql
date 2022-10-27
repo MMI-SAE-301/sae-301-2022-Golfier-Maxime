@@ -26,14 +26,6 @@ CREATE TABLE Montre(
    FOREIGN KEY(id_materiaux) REFERENCES Matériaux(id_materiaux)
 );
 
-
-
-
-
-
-
-
-
 --
 -- code pour la création des vues
 --
@@ -44,3 +36,6 @@ CREATE TABLE Montre(
 --
 -- code pour la création des policies
 --
+
+-- Pour la Policies Update
+(uid() = id_user)

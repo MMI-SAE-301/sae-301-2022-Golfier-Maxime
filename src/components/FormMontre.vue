@@ -10,18 +10,19 @@ let user = supabase.auth.user()
 const router = useRouter();
 
 const props = defineProps<{
-    data?: Basket;
+    data?: Montre;
     id?: string;
 }>();
 
-const montre = ref<Basket>(props.data ?? {});
 
+const montre = ref<Montre>(props.data ?? {});
+// @ts-ignore
 async function upsertMontre(dataForm, node) {
     const { data, error } = await supabase.from("montre").upsert(dataForm);
     if (error) node.setErrors([error.message]);
     else {
         node.setErrors([]);
-        router.push({ name: "basket" });
+        router.push("/Liste");
     }
 }
 
@@ -56,17 +57,16 @@ if (props.id) {
                 <FormKitListColors name="boitier" label="Boitier" />
                 <FormKitListColors name="ecran" label="Ecran" />
                 <!-- matériaux -->
-                <!-- <FormKit name="materiaux" label="Matériaux" value='#FFFFFF' type="radio" :options="materiaux"
-                :sections-schema="{
-                    inner: {$el : null},
-                    decorator: {$el:null},
+                <FormKit name="id_materiaux" label="Matériaux" type="radio" :options="materiaux" :sections-schema="{
+                    inner: { $el: null },
+                    decorator: { $el: null },
                 }" input-class="peer sr-only" options-class="flex gap-1">
-                <template #label="context">
-                    <img :src="context.option.value"
-                        class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" />
-                    <span class="sr-only">{{context.option.label}}</span>
-                </template>
-            </FormKit> -->
+                    <template #label="context">
+                        <img :src="context.option.img"
+                            class="h-6 w-6 rounded-full border-2 peer-checked:border-Blue-Black-0" />
+                        <span class="sr-only">{{ context.option.label }}</span>
+                    </template>
+                </FormKit>
             </FormKit>
         </div>
     </div>
