@@ -22,4 +22,10 @@ module.exports = {
     formKitTailwind,
     require("@headlessui/tailwindcss"),
   ],
+  screens: {
+    'ipad_mini': '744px',
+    'ipad_pro': '1024px',
+    'desktop': '1440px',
+
+  },
 };

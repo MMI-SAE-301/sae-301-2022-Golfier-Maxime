@@ -5,7 +5,7 @@ import LoginLogout from '@/components/LoginLogout.vue';
 <template>
   <div class="mt-40 mb-40">
     <!-- Section 1 -->
-    <div class="flex ml-[169px] mr-[169px]">
+    <div class="lg:flex ml-[169px] mr-[169px]">
       <div class="flex flex-col justify-between">
         <div>
           <h1 class="font-montserrat font-bold text-[60px]">LE TEMPS EST MODIFIÉ</h1>
