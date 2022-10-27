@@ -30,12 +30,49 @@ CREATE TABLE Montre(
 -- code pour la création des vues
 --
 
+CREATE VIEW allmontre as
+SELECT *
+FROM "montre"
 
+CREATE VIEW allmatériaux as
+SELECT *
+FROM "matériaux"
+
+create view allCuir as 
+Select "montre".*
+From "montre", "matériaux"
+Where "matériaux"."id_materiaux" = "montre"."id_materiaux" AND "matériaux"."libelle_materiaux" = 'Cuir'
+
+create view allMetal as 
+Select "montre".*
+From "montre", "matériaux"
+Where "matériaux"."id_materiaux" = "montre"."id_materiaux" AND "matériaux"."libelle_materiaux" = 'Or'
 
 
 --
 -- code pour la création des policies
 --
+matériaux :
 
+Policy name : Enable read access for all users
+Target roles : x
+USING expression : true
+
+
+montre :
+
+Policy name : Enable insert for authenticated users only
+Target roles : authentificated
+USING expression : true
+
+Policy name : Enable read access for all users
+Target roles : x
+USING expression : true
 -- Pour la Policies Update
-(uid() = id_user)
+
+
+Policy name : Enable update for users based on email
+Target roles : x
+USING expression : (uid() = id_user)
+WITH CHECK expression : (uid() IN ( SELECT allmontre.id_user
+FROM allmontre))

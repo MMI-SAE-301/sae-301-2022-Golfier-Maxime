@@ -15,7 +15,7 @@ if (error) {
 <template>
     <div>
         <ul class="lg:flex lg:gap-3 lg:ml-40 ">
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center justify-center lg:flex lg:flex-row lg:gap-6">
                 <li v-for="montre in montres" :key="montre.id_montre" class="">
                     <router-link :to="`/edit/${montre.id_montre}`">
                         <MontreVue class="w-32 margb" v-bind="montre" />

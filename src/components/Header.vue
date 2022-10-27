@@ -5,8 +5,10 @@ const menuVisible = ref(true);
 <template>
     <nav>
         <div class="bg-Blue-Black-0 flex justify-between">
-            <div class=" flex items-center">
-                <h1 class="text-white josefin text-[45px] ml-[45px]">TiK•TaK</h1>
+            <div class="items-center">
+                <router-link to="/">
+                    <h1 class="text-white josefin text-[45px] ml-[45px]">TiK•TaK</h1>
+                </router-link>
             </div>
             <div class="text-white lg:flex gap-8 font-montserrat text-2xl font-bold items-center hidden">
                 <div class=" hover:underline underline-offset-8 decoration-Blue-Light-0 ">

@@ -45,10 +45,10 @@ Noté sur 40.
   - Quelles techniques (Grilles Flex...)
     - ...
   - liens
-  - [ ] Mise en page fluide
-- [ ] Mobile First (0-1-2pts)
-  - [ ] Plusieurs tailles
-    - Lesquelles...
+  - [x] Mise en page fluide
+- [x] Mobile First (0-1-2pts)
+  - [x] Plusieurs tailles
+    - Mobile / PC
 - [ ] Dark Mode (0-1-2pts)
   - [ ] Simple usage de 'dark:'
   - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
