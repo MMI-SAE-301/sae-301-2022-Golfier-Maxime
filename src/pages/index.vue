@@ -3,9 +3,9 @@ import LoginLogout from '@/components/LoginLogout.vue';
 </script>
 
 <template>
-  <div class="mt-40 mb-40">
+  <div class="lg:mt-40 lg:mb-40">
     <!-- Section 1 -->
-    <div class="lg:flex ml-[169px] mr-[169px]">
+    <div class="lg:flex lg:ml-[169px] lg:mr-[169px]">
       <div class="flex flex-col justify-between">
         <div>
           <h1 class="font-montserrat font-bold text-[60px]">LE TEMPS EST MODIFIÉ</h1>
@@ -16,14 +16,14 @@ import LoginLogout from '@/components/LoginLogout.vue';
           <p class="font-montserrat underline underline-offset-2 text-2xl">Allez voir !</p>
         </router-link>
       </div>
-      <div class="w-[400px]">
+      <div class="lg:w-[400px] ">
         <img src="../assets/img/montre.png" class="">
       </div>
     </div>
     <!-- Section 2 -->
     <div class="mt-40">
-      <div class="flex ml-[169px] mr-[169px] ">
-        <div class="w-[400px]">
+      <div class="lg:flex lg:ml-[169px] lg:mr-[169px] ">
+        <div class="lg:w-[400px]">
           <img src="../assets/img/carre-tiktak.png">
         </div>
         <div class="flex flex-col justify-between">
@@ -41,9 +41,7 @@ import LoginLogout from '@/components/LoginLogout.vue';
       </div>
     </div>
   </div>
-  <!-- test en  dessou -->
-  <!-- <hr>
-  <LoginLogout /> -->
+
 
 </template>
 <style>
