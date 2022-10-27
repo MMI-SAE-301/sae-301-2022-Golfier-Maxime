@@ -3,9 +3,9 @@ import LoginLogout from '@/components/LoginLogout.vue';
 import LoginLogoutF from '@/components/LoginLogoutFacebook.vue';
 </script>
 <template>
-    <div class="flex justify-center mt-40 ">
-        <div class="flex gap-8 ">
-            <div class="bg-Blue-Black-0  ">
+    <div class="flex justify-center lg:mt-40 ">
+        <div class="lg:flex lg:gap-8 ">
+            <div class="bg-Blue-Black-0  cacher">
                 <h1 class="text-white josefin text-[45px] mt-4 ml-4 mr-4 ">TiK•TaK</h1>
             </div>
             <div class="flex flex-col gap-4 ">
@@ -21,6 +21,15 @@ import LoginLogoutF from '@/components/LoginLogoutFacebook.vue';
         </div>
     </div>
 </template>
-<style>
+<style scoped>
+.cacher {
+    visibility: hidden;
+}
 
+@media screen and (min-width: 910px) {
+    .cacher {
+        visibility: visible;
+
+    }
+}
 </style>
