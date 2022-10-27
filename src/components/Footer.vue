@@ -3,11 +3,11 @@
     <div class="pb-8 pt-8">
         <p class="text-black josefin text-[45px] ml-[45px] text-center">TiK•TaK</p>
         <div class="flex justify-center gap-16 mt-6">
-            <img src="public\discord.svg">
-            <img src="public\insta.svg">
-            <img src="public\tiktok.svg">
-            <img src="public\twitch.svg">
-            <img src="public\twitter.svg">
+            <img src="../assets/img/discord.svg">
+            <img src="../assets/img/insta.svg">
+            <img src="../assets/img/tiktok.svg">
+            <img src="../assets/img/twitch.svg">
+            <img src="../assets/img/twitter.svg">
         </div>
         <div class="flex justify-center">
             <div class="ligne_footer mt-6 mb-6 ">

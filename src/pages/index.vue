@@ -17,14 +17,14 @@ import LoginLogout from '@/components/LoginLogout.vue';
         </router-link>
       </div>
       <div class="w-[400px]">
-        <img src="montre.png" class="">
+        <img src="../assets/img/montre.png" class="">
       </div>
     </div>
     <!-- Section 2 -->
     <div class="mt-40">
       <div class="flex ml-[169px] mr-[169px] ">
         <div class="w-[400px]">
-          <img src="carre-tiktak.png">
+          <img src="../assets/img/carre-tiktak.png">
         </div>
         <div class="flex flex-col justify-between">
           <div>

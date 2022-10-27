@@ -9,7 +9,7 @@ import { supabase, user } from '../supabase';
         </button>
         <button class="flex gap-3 font-montserrat border border-Blue-Black-0 rounded-md px-2 py-2" v-else
             @pointerdown="supabase.auth.signIn({ provider: 'google' })">
-            <span><img src="google.svg"></span> Se connecter avec Google
+            <span><img src="../assets/img/google.svg"></span> Se connecter avec Google
         </button>
     </div>
 </template> 
